@@ -52,4 +52,13 @@ public class Student extends Person {
           this.tuition = tuition;
 
     }
+
+    private void calculateTuition(){
+          int numberOfCourses = this.enrolledCourses.length;
+          setTuition(500 * numberOfCourses);
+
+    }
+
+
+
 }
